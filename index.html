@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <div class="overlay" id="overlay">
+    <form>
+      <div>
+        <input type="text" id="inp" placeholder="Enter Your name">
+        <button type="button" id="send">Send</button>
+      </div>
+      <div id="alert">
+        <p>Please, Enter Your Name</p>
+      </div>
+    </form>
+  </div>
+  <div>
+    <h2>Hello,<span id="uName">...</span></h2>
+    <div><h3 onclick="play('hand')">✊</h3></div>
+    <div><h3 onclick="play('paper')">📃</h3></div>
+    <div><h3 onclick="play('scissors')">✂</h3></div>
+  </div>
+  <div>
+    <div class="image">
+      <h4>Player <span id="playerScore">20</span> | <span id="compScore">20</span> Computer</h4>
+      <img src="public/imgs/vs.png" alt="Vs Img">
+      <p id="res"></p>
+      <button id="restart" style="display: none;">Reset 🔁</button>
+    </div>
+  </div>
+  <div>
+    <h2>Hello,<span>Computer</span></h2>
+    <div><h3>✊</h3></div>
+    <div><h3>📃</h3></div>
+    <div><h3>✂</h3></div>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
